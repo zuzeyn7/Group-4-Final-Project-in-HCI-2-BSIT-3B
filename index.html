@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCI Final Project | Web Reporting Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">Group 4 · HCI<sup>2</sup></span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#data">Data Gathering</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#walkthrough">Walkthrough</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HOME ═══════════ -->
+  <section id="home" class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content reveal">
+      <div class="hero-eyebrow">HCI2 &nbsp;·&nbsp; Partido State University &nbsp;·&nbsp; 2024</div>
+      <img src="logo.png" alt="Prototype Logo" class="hero-logo" onerror="this.style.display='none'">
+      <h1 class="hero-title">
+        Usability Evaluation<br>
+        <span class="accent-text">Web Report</span>
+      </h1>
+      <p class="hero-sub">A comprehensive documentation of heuristic evaluation and usability testing conducted on our midterm prototype — presented through Nielsen's 10 Usability Heuristics framework.</p>
+      <div class="hero-pills">
+        <span>Heuristic Evaluation</span>
+        <span>Usability Testing</span>
+        <span>Nielsen's 10 Heuristics</span>
+      </div>
+      <a href="#data" class="cta-btn">Explore the Report ↓</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MEMBERS ═══════════ -->
+  <section id="members" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">The Team</div>
+        <h2>Group Members</h2>
+        <p>Meet the researchers and evaluators behind this usability study.</p>
+      </div>
+
+      <div class="members-grid">
+        <div class="member-card reveal" style="--d:.0s">
+          <div class="m-img-wrap">
+            <img src="1.jpg" alt="John Michael Belmonte" onerror="this.src='https://ui-avatars.com/api/?name=John+Belmonte&background=1a2a4a&color=c9a84c&bold=true&size=200'">
+          </div>
+          <h3>John Michael Belmonte</h3>
+          <span>Project Lead & Evaluator</span>
+        </div>
+        <div class="member-card reveal" style="--d:.1s">
+          <div class="m-img-wrap">
+            <img src="2.jpg" alt="Jessica Vipinoso" onerror="this.src='https://ui-avatars.com/api/?name=Jessica+Vipinoso&background=1a2a4a&color=c9a84c&bold=true&size=200'">
+          </div>
+          <h3>Jessica Vipinoso</h3>
+          <span>Usability Tester</span>
+        </div>
+        <div class="member-card reveal" style="--d:.2s">
+          <div class="m-img-wrap">
+            <img src="3.jpg" alt="Jommel Pahuwayan" onerror="this.src='https://ui-avatars.com/api/?name=Jommel+Pahuwayan&background=1a2a4a&color=c9a84c&bold=true&size=200'">
+          </div>
+          <h3>Jommel Pahuwayan</h3>
+          <span>Data Analyst</span>
+        </div>
+        <div class="member-card reveal" style="--d:.3s">
+          <div class="m-img-wrap">
+            <img src="4.jpg" alt="Earl Francis Salvo" onerror="this.src='https://ui-avatars.com/api/?name=Earl+Salvo&background=1a2a4a&color=c9a84c&bold=true&size=200'">
+          </div>
+          <h3>Earl Francis Salvo</h3>
+          <span>Heuristic Evaluator</span>
+        </div>
+        <div class="member-card reveal" style="--d:.4s">
+          <div class="m-img-wrap">
+            <img src="5.jpg" alt="Jezel Dominguez" onerror="this.src='https://ui-avatars.com/api/?name=Jezel+Dominguez&background=1a2a4a&color=c9a84c&bold=true&size=200'">
+          </div>
+          <h3>Jezel Dominguez</h3>
+          <span>Documentation Lead</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ DATA GATHERING ═══════════ -->
+  <section id="data" class="section alt-bg">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Phase 01</div>
+        <h2>Data Gathering &amp; Instruments</h2>
+        <p>All instruments, consent forms, and respondent profiles used in our evaluation process.</p>
+      </div>
+
+      <div class="two-col reveal">
+        <div class="info-card">
+          <div class="ic-icon">📋</div>
+          <h3>Consent Form</h3>
+          <p>All participants provided informed consent prior to testing. The consent form outlined the purpose of the study, confidentiality terms, and voluntary participation rights.</p>
+          <a href="#" class="link-pill">View Consent Form →</a>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">👥</div>
+          <h3>Respondents Profile</h3>
+          <p>A total of <strong>5 respondents</strong> participated in usability testing, selected based on familiarity with the system's target domain.</p>
+          <div class="resp-stats">
+            <div class="r-stat-item"><span class="rs-num">5</span><span class="rs-lbl">Participants</span></div>
+            <div class="r-stat-item"><span class="rs-num">3</span><span class="rs-lbl">Male</span></div>
+            <div class="r-stat-item"><span class="rs-num">2</span><span class="rs-lbl">Female</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="instruments-wrap reveal">
+        <h3 class="sub-h">Survey Instruments</h3>
+        <div class="instruments-grid">
+          <div class="inst-item">
+            <div class="inst-num">01</div>
+            <div class="inst-body">
+              <h4>Heuristic Evaluation Workbook</h4>
+              <p>Each group member independently evaluated the prototype against Jakob Nielsen's 10 Usability Heuristics. Issues were rated by severity using a 0–4 scale.</p>
+              <a href="Heuristic-Evaluation-Workbook.pdf" target="_blank" class="doc-btn">📄 Download Workbook (PDF)</a>
+            </div>
+          </div>
+          <div class="inst-item">
+            <div class="inst-num">02</div>
+            <div class="inst-body">
+              <h4>Usability Testing Survey</h4>
+              <p>Respondents completed a structured post-test survey measuring satisfaction, task success rate, and perceived ease of use using a SUS-based scale.</p>
+              <a href="#" class="doc-btn">📄 View Survey Instrument</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-wrap reveal">
+        <h3 class="sub-h">Testing Documentation</h3>
+        <div class="gallery-grid">
+          <div class="gal-item ph"><span>Testing Photo 1</span></div>
+          <div class="gal-item ph"><span>Testing Photo 2</span></div>
+          <div class="gal-item ph"><span>Testing Photo 3</span></div>
+          <div class="gal-item ph"><span>Testing Photo 4</span></div>
+          <div class="gal-item ph"><span>Supporting Doc</span></div>
+          <div class="gal-item ph"><span>Testing Photo 5</span></div>
+        </div>
+        <p class="gal-note">📁 Replace placeholders with actual testing photos (e.g., testing-photo1.jpg)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ RESULTS ═══════════ -->
+  <section id="results" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">Phase 02</div>
+        <h2>Results, Discussion &amp; Recommendations</h2>
+        <p>Key usability findings, analysis of issues, and actionable design recommendations.</p>
+      </div>
+
+      <div class="results-stats reveal">
+        <div class="rs-box"><span class="rs-big">78%</span><span>Task Success Rate</span></div>
+        <div class="rs-box"><span class="rs-big">3.4<small>/5</small></span><span>Avg. Satisfaction</span></div>
+        <div class="rs-box"><span class="rs-big">12</span><span>Issues Identified</span></div>
+        <div class="rs-box"><span class="rs-big">5</span><span>Critical Findings</span></div>
+      </div>
+
+      <div class="findings-wrap reveal">
+        <h3 class="sub-h">Key Issues Identified</h3>
+        <div class="findings-list">
+          <div class="finding-row">
+            <span class="sev high">High</span>
+            <div class="f-content">
+              <strong>Lack of system feedback on form submission</strong>
+              <p>Users were unsure if their actions were registered — no confirmation or loading indicator was displayed.</p>
+              <span class="h-tag">H1: Visibility of System Status</span>
+            </div>
+          </div>
+          <div class="finding-row">
+            <span class="sev high">High</span>
+            <div class="f-content">
+              <strong>Inconsistent navigation labels across pages</strong>
+              <p>Menu items used different terminology for the same sections, causing disorientation.</p>
+              <span class="h-tag">H4: Consistency &amp; Standards</span>
+            </div>
+          </div>
+          <div class="finding-row">
+            <span class="sev med">Medium</span>
+            <div class="f-content">
+              <strong>No error prevention on critical inputs</strong>
+              <p>Invalid date inputs were accepted without warnings before submission.</p>
+              <span class="h-tag">H5: Error Prevention</span>
+            </div>
+          </div>
+          <div class="finding-row">
+            <span class="sev med">Medium</span>
+            <div class="f-content">
+              <strong>Minimal help documentation</strong>
+              <p>First-time users had difficulty navigating without guidance; no tooltips or onboarding present.</p>
+              <span class="h-tag">H10: Help &amp; Documentation</span>
+            </div>
+          </div>
+          <div class="finding-row">
+            <span class="sev low">Low</span>
+            <div class="f-content">
+              <strong>Dense information layout on dashboard</strong>
+              <p>The main dashboard displayed too much information simultaneously, reducing usability and aesthetics.</p>
+              <span class="h-tag">H8: Aesthetic &amp; Minimalist Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-wrap reveal">
+        <h3 class="sub-h">Discussion of Findings</h3>
+        <div class="disc-card">
+          <p>Overall, the usability evaluation revealed that while the prototype successfully demonstrates core functionality, several interaction design gaps hinder the user experience. The most critical issues centered around <strong>system feedback</strong> and <strong>consistency</strong> — both fundamental heuristics directly affecting user trust and task completion.</p>
+          <p>Respondents showed a moderate task success rate of <strong>78%</strong>, with the lowest performance observed in multi-step workflows. Qualitative feedback indicated users frequently second-guessed their actions due to insufficient system responses, aligning with H1 violations in the heuristic evaluation.</p>
+          <p>The convergence between heuristic findings and usability test results strengthens the validity of the evaluation, suggesting these are systemic issues rather than isolated incidents.</p>
+        </div>
+      </div>
+
+      <div class="rec-wrap reveal">
+        <h3 class="sub-h">Design Recommendations</h3>
+        <div class="rec-grid">
+          <div class="rec-card"><div class="rec-ico">💬</div><h4>Implement Feedback Mechanisms</h4><p>Add toast notifications, loading spinners, and success/error messages to every form interaction and system action.</p></div>
+          <div class="rec-card"><div class="rec-ico">🧭</div><h4>Standardize Navigation Labels</h4><p>Conduct a content audit and unify all navigation terminology using a shared design system and component library.</p></div>
+          <div class="rec-card"><div class="rec-ico">🛡️</div><h4>Add Input Validation</h4><p>Implement real-time validation on all form fields with clear inline error messages before data is submitted.</p></div>
+          <div class="rec-card"><div class="rec-ico">📖</div><h4>Create Help Documentation</h4><p>Develop a contextual help system with tooltips, an FAQ section, and an onboarding tutorial for new users.</p></div>
+          <div class="rec-card"><div class="rec-ico">🎨</div><h4>Simplify Dashboard Layout</h4><p>Restructure using progressive disclosure — show summary metrics first, with details accessible on demand.</p></div>
+          <div class="rec-card"><div class="rec-ico">♻️</div><h4>Re-test After Iteration</h4><p>Conduct a follow-up usability test after implementing changes to measure improvement in success and satisfaction.</p></div>
+        </div>
+      </div>
+
+      <div class="pdf-cta reveal">
+        <div class="pdf-text">
+          <h3>Heuristic Evaluation Workbook</h3>
+          <p>Full individual evaluations from all 5 members, including severity ratings and annotated screenshots.</p>
+        </div>
+        <a href="Heuristic-Evaluation-Workbook.pdf" class="btn-primary" target="_blank">📄 View Full Workbook (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WALKTHROUGH (Optional) ═══════════ -->
+  <section id="walkthrough" class="section alt-bg">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label sec-optional">Extra · Optional</div>
+        <h2>Prototype Walkthrough</h2>
+        <p>A visual tour of the prototype's key screens and interaction flows evaluated during testing.</p>
+      </div>
+
+      <div class="walk-steps">
+        <div class="walk-step reveal">
+          <div class="w-num">01</div>
+          <div class="w-body">
+            <h4>Landing / Login Screen</h4>
+            <p>The entry point of the prototype. Users authenticate via a login form. This screen was identified as having feedback issues during testing — no confirmation was shown after login.</p>
+            <div class="w-img ph tall"><span>Screenshot: Login Screen</span></div>
+          </div>
+        </div>
+        <div class="walk-step reveal">
+          <div class="w-num">02</div>
+          <div class="w-body">
+            <h4>Dashboard / Home</h4>
+            <p>The main hub displaying key information. The dense layout was flagged as a usability concern under H8: Aesthetic &amp; Minimalist Design.</p>
+            <div class="w-img ph tall"><span>Screenshot: Dashboard</span></div>
+          </div>
+        </div>
+        <div class="walk-step reveal">
+          <div class="w-num">03</div>
+          <div class="w-body">
+            <h4>Core Feature Flow</h4>
+            <p>The primary task flow users were asked to complete. Navigation inconsistencies were most apparent at this stage of interaction.</p>
+            <div class="w-img ph tall"><span>Screenshot: Feature Screen</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-wrap reveal">
+        <h3 class="sub-h">Video Demonstration</h3>
+        <div class="video-ph">
+          <div class="vid-icon">▶</div>
+          <p>Embed your prototype demonstration video here</p>
+          <code>&lt;iframe src="YOUR_VIDEO_URL" width="100%" height="480" frameborder="0"&gt;&lt;/iframe&gt;</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ REFLECTIONS (Optional) ═══════════ -->
+  <section id="reflections" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label sec-optional">Extra · Optional</div>
+        <h2>Reflections</h2>
+        <p>Personal insights from each team member on the evaluation process and learnings.</p>
+      </div>
+
+      <div class="reflections-grid">
+        <div class="ref-card reveal" style="--d:0s">
+          <div class="ref-avatar">JMB</div>
+          <h4>John Michael Belmonte</h4>
+          <blockquote>Conducting the heuristic evaluation opened my eyes to how small design decisions create large usability barriers. I learned to evaluate systems not just as a developer, but as a user.</blockquote>
+        </div>
+        <div class="ref-card reveal" style="--d:.1s">
+          <div class="ref-avatar">JV</div>
+          <h4>Jessica Vipinoso</h4>
+          <blockquote>Facilitating usability tests taught me the importance of neutral observation. Watching real users interact with our prototype was both humbling and incredibly informative.</blockquote>
+        </div>
+        <div class="ref-card reveal" style="--d:.2s">
+          <div class="ref-avatar">JP</div>
+          <h4>Jommel Pahuwayan</h4>
+          <blockquote>Analyzing data and finding patterns across multiple respondents was challenging but rewarding. The numbers told a clear story about where our design fell short.</blockquote>
+        </div>
+        <div class="ref-card reveal" style="--d:.3s">
+          <div class="ref-avatar">EFS</div>
+          <h4>Earl Francis Salvo</h4>
+          <blockquote>Nielsen's heuristics gave us a shared vocabulary to discuss design problems. I'll carry this framework into every future project as a first-pass evaluation tool.</blockquote>
+        </div>
+        <div class="ref-card reveal" style="--d:.4s">
+          <div class="ref-avatar">JD</div>
+          <h4>Jezel Dominguez</h4>
+          <blockquote>Documenting every step made me realize how important traceability is in UX research. Good documentation transforms findings into actionable improvements.</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ADDITIONAL FINDINGS (Optional) ═══════════ -->
+  <section id="additional" class="section alt-bg">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label sec-optional">Extra · Optional</div>
+        <h2>Additional Findings</h2>
+        <p>Supplementary observations and insights that emerged during the evaluation process.</p>
+      </div>
+
+      <div class="add-grid">
+        <div class="add-card reveal">
+          <span class="add-tag">Accessibility</span>
+          <h4>Color Contrast Issues</h4>
+          <p>Several UI elements did not meet WCAG AA contrast ratio requirements (4.5:1 for normal text), particularly in the secondary navigation and footer components.</p>
+        </div>
+        <div class="add-card reveal">
+          <span class="add-tag">Mobile UX</span>
+          <h4>Responsive Breakpoints</h4>
+          <p>The prototype was not fully responsive at mobile viewport widths (&lt; 480px), resulting in horizontal overflow and overlapping elements on smaller devices.</p>
+        </div>
+        <div class="add-card reveal">
+          <span class="add-tag">Interaction</span>
+          <h4>Keyboard Navigation Gaps</h4>
+          <p>Several interactive elements were unreachable via keyboard-only navigation, posing accessibility barriers for non-mouse users.</p>
+        </div>
+        <div class="add-card reveal">
+          <span class="add-tag">Performance</span>
+          <h4>Slow Load on Media Pages</h4>
+          <p>Pages with embedded images and media showed noticeably longer load times, impacting perceived system responsiveness during testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" title="Go to top" aria-label="Back to top">↑</button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="f-brand">
+        <span class="f-logo">Group 4 · HCI<sup>2</sup></span>
+        <p>Human-Computer Interaction 2 · Final Project</p>
+      </div>
+      <div class="f-school">
+        <p>Partido State University</p>
+        <p>College of Engineering &amp; Computational Sciences</p>
+        <p>Computational Sciences Department</p>
+      </div>
+      <nav class="f-nav">
+        <a href="#home">Home</a>
+        <a href="#data">Data</a>
+        <a href="#results">Results</a>
+        <a href="#walkthrough">Walkthrough</a>
+        <a href="#reflections">Reflections</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <p>© 2024 Group 4 — HCI2 Final Project · Partido State University, Goa, Camarines Sur</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
