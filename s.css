@@ -605,3 +605,7 @@ a { text-decoration: none; color: inherit; }
   .hero-title { font-size: 2.2rem; }
   .inst-item { flex-direction: column; }
 }
+.project-logo-svg {
+        --logo-size: 80px; /* Slightly smaller for mobile screens */
+        margin-bottom: 15px;
+}
