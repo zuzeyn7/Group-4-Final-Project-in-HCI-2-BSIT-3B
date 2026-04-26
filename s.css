@@ -87,6 +87,29 @@ a { text-decoration: none; color: inherit; }
   transition: all .3s;
 }
 
+.logo-container {
+    width: 100%;           /* Take full width of parent */
+    display: flex;         /* Use flexbox to center the child */
+    justify-content: center; 
+    margin-bottom: 20px;   /* Space below the logo */
+}
+
+.project-logo-svg {
+    /* Responsive sizing */
+    width: 120px;          /* Desktop size */
+    height: auto;          /* Maintain aspect ratio */
+    display: block;
+    
+    /* Smooth scaling */
+    transition: width 0.3s ease;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .project-logo-svg {
+        width: 90px;       /* Smaller size for mobile phones */
+    }
+}
 /* ─────────────────────────────────────
    HERO
 ───────────────────────────────────── */
