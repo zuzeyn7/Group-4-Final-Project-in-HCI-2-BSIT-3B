@@ -609,3 +609,47 @@ a { text-decoration: none; color: inherit; }
         --logo-size: 80px; /* Slightly smaller for mobile screens */
         margin-bottom: 15px;
 }
+
+/* Container for the gallery */
+.gallery-grid {
+  display: grid;
+  /* Creates as many columns as fit, at least 250px wide each */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual item styling */
+.gal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9; /* Optional: adds a slight card feel */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Make images fluid */
+.gal-item img {
+  width: 100%;
+  height: 200px;      /* Fixed height keeps the grid uniform */
+  object-fit: cover;  /* Crops image to fill the area without stretching */
+  display: block;
+}
+
+/* Caption styling */
+.gal-item span {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Mobile adjustments for very small screens */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Stack images in a single column */
+    gap: 15px;
+  }
+}
