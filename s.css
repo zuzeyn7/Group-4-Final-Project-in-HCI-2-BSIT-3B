@@ -3,32 +3,38 @@
    Aesthetic: Academic Elegance · Navy & Gold
    ═══════════════════════════════════════ */
 :root {
-  /* Primary Palette - Light Turquoise & Soft Blues */
-  --navy:    #0d1b2e; /* Very Light Turquoise/Ice Blue Background */
-  --navy-2:  #b2ebf2; /* Light Cyan for subtle depth */
-  --navy-3:  #80deea; /* Soft Turquoise for secondary accents */
-  
-  /* Accent Colors - Keeping the "Gold" vibe but as a Teal/Mint */
-  --gold:    #00acc1; /* Vibrant Turquoise for primary buttons/icons */
-  --gold-lt: #4dd0e1; /* Lighter Turquoise for hover states */
-  
-  /* Text & Surface Colors */
-  --cream:   #ffffff; /* Pure White for card surfaces */
-  --white:   #ffffff; /* White */
-  --text:    #263238; /* Dark Blue-Grey for high readability */
-  --text-2:  #546e7a; /* Muted Blue-Grey for secondary descriptions */
-  
-  /* Glassmorphism & UI Accents */
-  --border:  rgba(0, 172, 193, 0.15); /* Soft Turquoise border */
-  --card-bg: rgba(255, 255, 255, 0.8); /* Semi-transparent white for glass effect */
-  --alt-bg:  #f0fdfd; /* Off-white turquoise for section backgrounds */
-  
-  /* Fonts & Radius */
-  --font-d:  'Playfair Display', serif;
-  --font-s:  'DM Sans', sans-serif;
-  --rad:      12px;
-  --rad-lg:   20px;
 
+  --navy:    #0d1b2e;
+
+  --navy-2:  #142138;
+
+  --navy-3:  #1c2d4a;
+
+  --gold:    #c9a84c;
+
+  --gold-lt: #e8c87a;
+
+  --cream:   #f5f0e8;
+
+  --white:   #ffffff;
+
+  --text:    #e2ddd4;
+
+  --text-2:  #9fafc2;
+
+  --border:  rgba(201,168,76,.18);
+
+  --card-bg: rgba(28,45,74,.6);
+
+  --alt-bg:  #0a1525;
+
+  --font-d:  'Playfair Display', serif;
+
+  --font-s:  'DM Sans', sans-serif;
+
+  --rad:     12px;
+
+  --rad-lg:  20px;
   --shadow:  0 8px 40px rgba(0,0,0,.4);
 }
 
