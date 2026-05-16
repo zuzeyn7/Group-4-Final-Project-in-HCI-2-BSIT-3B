@@ -1,0 +1,78 @@
+.section { max-width:900px; margin:0 auto; padding:0 1.5rem 4rem; }
+
+  .card { background:var(--card); border:0.5px solid var(--card-border); border-radius:var(--radius); padding:1.25rem 1.5rem; }
+  .card-title { font-size:13px; font-weight:600; color:var(--text-muted); letter-spacing:.03em; margin-bottom:1rem; display:flex; align-items:center; gap:6px; }
+
+  .metric-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-bottom:1.5rem; }
+  .metric-card { background:var(--bg3); border:0.5px solid var(--card-border); border-radius:var(--radius-sm); padding:1.1rem 1.2rem; position:relative; overflow:hidden; }
+  .metric-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--accent,var(--teal)); }
+  .metric-label { font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--text-dim); margin-bottom:6px; }
+  .metric-value { font-family:'DM Serif Display',serif; font-size:30px; color:#fff; line-height:1; }
+  .metric-sub   { font-size:11px; color:var(--text-dim); margin-top:4px; }
+
+  .tabs { display:flex; gap:2px; border-bottom:0.5px solid var(--card-border); margin-bottom:1.5rem; }
+  .tab-btn { padding:9px 18px; font-size:13px; font-weight:500; color:var(--text-muted); background:none; border:none; border-bottom:2px solid transparent; cursor:pointer; transition:all .15s; margin-bottom:-0.5px; font-family:'DM Sans',sans-serif; }
+  .tab-btn:hover { color:var(--text); }
+  .tab-btn.active { color:var(--teal-light); border-bottom-color:var(--teal); }
+  .tab-panel { display:none; }
+  .tab-panel.active { display:block; }
+
+  .sus-meter { background:linear-gradient(135deg,rgba(29,158,117,.08) 0%,rgba(13,15,20,0) 60%); border:0.5px solid rgba(93,202,165,.2); border-radius:var(--radius); padding:1.5rem 1.75rem; margin-bottom:1.25rem; }
+  .sus-header { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:1rem; }
+  .sus-title  { font-size:14px; font-weight:600; color:var(--text-muted); }
+  .sus-number { font-family:'DM Serif Display',serif; font-size:36px; color:var(--teal-light); line-height:1; }
+  .sus-track  { height:10px; border-radius:5px; background:var(--bg3); overflow:hidden; margin-bottom:6px; }
+  .sus-fill   { height:100%; border-radius:5px; background:linear-gradient(90deg,#5DCAA5,#1D9E75); width:0; transition:width 1.4s cubic-bezier(.25,1,.5,1); }
+  .sus-markers { display:flex; justify-content:space-between; font-size:10px; color:var(--text-dim); margin-top:4px; }
+  .grade-badge { display:inline-flex; align-items:center; gap:5px; font-size:11px; font-weight:600; padding:4px 10px; border-radius:4px; background:rgba(29,158,117,.15); color:var(--teal-light); border:0.5px solid rgba(29,158,117,.3); margin-top:10px; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.25rem; }
+  .single-col {
+  width: 100%;
+  display: block; /* Ensures it behaves as a standard block layout */
+  margin-bottom: 20px; /* Optional: adds space below the card */
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  /* Keep your existing .card styles (padding, background, border, etc.) here */
+}
+  @media(max-width:580px){ .two-col{grid-template-columns:1fr;} }
+
+  .q-row { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:0.5px solid rgba(255,255,255,.05); }
+  .q-row:last-child { border-bottom:none; }
+  .q-dot  { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .q-label { flex:1; font-size:12px; color:var(--text-muted); min-width:0; }
+  .q-bar-wrap { width:100px; height:6px; background:var(--bg3); border-radius:3px; overflow:hidden; flex-shrink:0; }
+  .q-bar { height:100%; border-radius:3px; transition:width 1s ease; }
+  .q-val { font-size:12px; font-weight:600; color:#fff; width:30px; text-align:right; flex-shrink:0; }
+  .q-pct { font-size:11px; color:var(--text-dim); width:46px; text-align:right; flex-shrink:0; }
+
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:var(--text-muted); margin-bottom:12px; }
+  .legend-item { display:flex; align-items:center; gap:5px; }
+  .legend-dot  { width:8px; height:8px; border-radius:50%; }
+
+  .donut-section { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .donut-legend  { display:flex; flex-direction:column; gap:8px; font-size:12px; color:var(--text-muted); }
+
+  .filter-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:1rem; }
+  .chip { padding:5px 13px; border-radius:20px; font-size:12px; font-weight:500; border:0.5px solid var(--card-border); background:var(--card); color:var(--text-muted); cursor:pointer; transition:all .15s; font-family:'DM Sans',sans-serif; }
+  .chip.active { background:var(--teal-dim); color:var(--teal-light); border-color:rgba(93,202,165,.3); }
+  .quote-list { display:flex; flex-direction:column; gap:8px; max-height:400px; overflow-y:auto; padding-right:4px; }
+  .quote-list::-webkit-scrollbar { width:4px; }
+  .quote-list::-webkit-scrollbar-thumb { background:var(--card-border); border-radius:2px; }
+  .quote-item { background:var(--bg3); border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--text); line-height:1.55; border-left:3px solid var(--teal); }
+  .quote-item.improve { border-left-color:var(--coral); }
+  .quote-tag { font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-bottom:3px; }
+
+  .divider { border:none; border-top:0.5px solid var(--card-border); margin:3rem 0; }
+  footer { text-align:center; padding:2rem 1rem 3rem; font-size:12px; color:var(--text-dim); border-top:0.5px solid var(--card-border); }
+  footer a { color:var(--teal-light); text-decoration:none; }
+  .back-link { display:inline-flex; align-items:center; gap:6px; font-size:13px; color:var(--text-muted); text-decoration:none; margin-bottom:2rem; transition:color .15s; }
+  .back-link:hover { color:var(--text); }
+
+  .stat-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .stat-table td { padding:7px 0; border-bottom:0.5px solid rgba(255,255,255,.05); color:var(--text-muted); }
+  .stat-table td:last-child { text-align:right; color:#fff; font-weight:500; }
+  .stat-table tr:last-child td { border-bottom:none; }
