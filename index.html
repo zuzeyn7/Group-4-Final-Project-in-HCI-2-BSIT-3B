@@ -6,9 +6,7 @@
   <title>HCI Final Project | Web Reporting Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
   <link rel="stylesheet" href="s.css">
-  <link rel="stylesheet" href="usability.css">
 </head>
 <body>
 
@@ -218,175 +216,7 @@
         <p>Key usability findings, analysis of issues, and actionable design recommendations.</p>
       </div>
 
-      <div class="tabs">
-    <button class="tab-btn active" onclick="switchTab('overview',this)">Overview</button>
-    <button class="tab-btn" onclick="switchTab('questions',this)">SUS Questions</button>
-    <button class="tab-btn" onclick="switchTab('demographics',this)">Demographics</button>
-    <button class="tab-btn" onclick="switchTab('feedback',this)">Open Feedback</button>
-  </div>
-
-  <!-- OVERVIEW -->
-  <div id="panel-overview" class="tab-panel active">
-    <div class="metric-grid">
-      <div class="metric-card" style="--accent:#1D9E75;">
-        <div class="metric-label">SUS Score</div>
-        <div class="metric-value" style="color:var(--teal-light);">68.41</div>
-        <div class="metric-sub">out of 100 · Good</div>
-      </div>
-      <div class="metric-card" style="--accent:#378ADD;">
-        <div class="metric-label">Respondents</div>
-        <div class="metric-value">22</div>
-        <div class="metric-sub">valid responses</div>
-      </div>
-      <div class="metric-card" style="--accent:#5DCAA5;">
-        <div class="metric-label">Confidence (Q9)</div>
-        <div class="metric-value">4.36</div>
-        <div class="metric-sub">avg / 5 · 87.27%</div>
-      </div>
-      <div class="metric-card" style="--accent:#EF9F27;">
-        <div class="metric-label">Learnability (Q7)</div>
-        <div class="metric-value">4.36</div>
-        <div class="metric-sub">avg / 5 · 87.27%</div>
-      </div>
-    </div>
-
-    <div class="sus-meter">
-      <div class="sus-header">
-        <div class="sus-title"><i class="ti ti-gauge" style="font-size:14px;vertical-align:-2px;margin-right:5px;"></i>Overall SUS Score</div>
-        <div class="sus-number">68.41 <span style="font-size:16px;color:var(--text-muted);">/ 100</span></div>
-      </div>
-      <div class="sus-track"><div class="sus-fill" id="sus-fill"></div></div>
-      <div class="sus-markers">
-        <span>0 · Worst</span>
-        <span>51 · OK</span>
-        <span>68 · Good</span>
-        <span>80.3 · Excellent</span>
-        <span>100 · Best</span>
-      </div>
-      <div class="grade-badge">
-        <i class="ti ti-circle-check" style="font-size:12px;"></i>
-        Good / Acceptable · Meets and slightly exceeds the 68-point industry threshold
-      </div>
-    </div>
-
- <div class="single-col">
-      <div class="card">
-        <div class="card-title"><i class="ti ti-circle-half-2" style="font-size:14px;"></i> Positive vs negative items</div>
-        <div style="position:relative;height:190px;">
-          <canvas id="posNegChart" role="img" aria-label="Bar chart: positive items avg 4.20, negative items avg 2.73.">Positive 4.20, Negative 2.73.</canvas>
-        </div>
-      </div>
-  </div>
- 
-
-    <div class="card" style="margin-bottom:1.25rem;">
-      <div class="card-title"><i class="ti ti-chart-radar" style="font-size:14px;"></i> All 10 SUS dimensions — radar view</div>
-      <div style="position:relative;height:290px;">
-        <canvas id="radarChart" role="img" aria-label="Radar chart showing all 10 SUS dimension averages.">10 SUS dimensions on radar.</canvas>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title"><i class="ti ti-list-details" style="font-size:14px;"></i> Summary statistics</div>
-      <table class="stat-table">
-        <tr><td>Total respondents</td><td>22</td></tr>
-        <tr><td>Average SUS score</td><td>68.41 / 100</td></tr>
-        <tr><td>Minimum SUS score</td><td>37.5</td></tr>
-        <tr><td>Maximum SUS score</td><td>100.0</td></tr>
-        <tr><td>SUS grade</td><td>Good / Acceptable</td></tr>
-        <tr><td>Positive items average</td><td>4.20 / 5 &nbsp;(84.00%)</td></tr>
-        <tr><td>Negative items average</td><td>2.73 / 5 &nbsp;(54.55%)</td></tr>
-        <tr><td>Top dimension</td><td>Learnability &amp; Confidence — 87.27%</td></tr>
-        <tr><td>Weakest dimension (negative)</td><td>Unnecessarily complex — 49.09%</td></tr>
-        <tr><td>Female respondents</td><td>18 (81.82%)</td></tr>
-        <tr><td>Male respondents</td><td>4 (18.18%)</td></tr>
-        <tr><td>With prior system experience</td><td>16 (72.73%)</td></tr>
-        <tr><td>Daily technology users</td><td>13 (59.09%)</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <!-- SUS QUESTIONS -->
-  <div id="panel-questions" class="tab-panel">
-    <div class="legend">
-      <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Positive item — higher = better</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--coral);"></div> Negative item — lower = better</div>
-    </div>
-    <div class="card" style="margin-bottom:1rem;">
-      <div id="q-list"></div>
-    </div>
-    <div class="card">
-      <div class="card-title"><i class="ti ti-chart-bar" style="font-size:14px;"></i> Average scores — horizontal view</div>
-      <div style="position:relative;height:280px;">
-        <canvas id="qBarChart" role="img" aria-label="Horizontal bar chart for all 10 SUS questions.">Q1–Q10 averages.</canvas>
-      </div>
-    </div>
-    <p style="font-size:12px;color:var(--text-dim);margin-top:.75rem;">* Percentages = raw mean ÷ 5 × 100. Negative items are score-inverted in the SUS formula.</p>
-  </div>
-
-  <!-- DEMOGRAPHICS -->
-  <div id="panel-demographics" class="tab-panel">
-    <div class="two-col">
-      <div class="card">
-        <div class="card-title">Gender breakdown</div>
-        <div class="donut-section">
-          <div style="position:relative;height:140px;width:140px;flex-shrink:0;">
-            <canvas id="genderChart" role="img" aria-label="Donut: Female 18 (81.82%), Male 4 (18.18%).">Female 18, Male 4.</canvas>
-          </div>
-          <div class="donut-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Female — 18 (81.82%)</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--blue);"></div> Male — 4 (18.18%)</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">Prior system experience</div>
-        <div class="donut-section">
-          <div style="position:relative;height:140px;width:140px;flex-shrink:0;">
-            <canvas id="expChart" role="img" aria-label="Donut: Yes 16 (72.73%), No 6 (27.27%).">Yes 16, No 6.</canvas>
-          </div>
-          <div class="donut-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Yes — 16 (72.73%)</div>
-            <div class="legend-item"><div class="legend-dot" style="background:#555c6e;"></div> No — 6 (27.27%)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="two-col">
-      <div class="card">
-        <div class="card-title">Technology use frequency</div>
-        <div style="position:relative;height:170px;">
-          <canvas id="freqChart" role="img" aria-label="Bar chart: Daily 13, Weekly 4, Never 5.">Daily 13, Weekly 4, Never 5.</canvas>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-title">Age distribution</div>
-        <div style="position:relative;height:170px;">
-          <canvas id="ageChart" role="img" aria-label="Bar chart of ages 18–30.">18:5, 19:9, 20:3, 21:1, 22:1, 24:1, 25:1, 30:1.</canvas>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Average SUS score by gender</div>
-      <div style="position:relative;height:160px;">
-        <canvas id="genderSusChart" role="img" aria-label="Bar chart: Female avg SUS 72.22, Male avg SUS 51.25.">Female 72.22, Male 51.25.</canvas>
-      </div>
-    </div>
-  </div>
-
-  <!-- FEEDBACK -->
-  <div id="panel-feedback" class="tab-panel">
-    <div class="filter-row">
-      <button class="chip active" onclick="filterQuotes('all',this)">All responses</button>
-      <button class="chip" onclick="filterQuotes('like',this)">What they liked</button>
-      <button class="chip" onclick="filterQuotes('improve',this)">Suggestions</button>
-    </div>
-    <div class="quote-list" id="quote-list"></div>
-  </div>
-
-</div>
-
-
+     
 
       <div class="findings-wrap reveal">
         <h3 class="sub-h">Key Issues Identified</h3>
@@ -618,8 +448,6 @@
     </div>
   </footer>
         
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
   <script src="script.js"></script>
-  <script src="usability.js"></script>
 </body>
 </html>
