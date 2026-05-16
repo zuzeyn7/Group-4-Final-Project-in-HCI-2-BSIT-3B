@@ -126,7 +126,7 @@ a { text-decoration: none; color: inherit; }
    HERO
 ───────────────────────────────────── */
 .hero {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
   padding: 100px 24px 60px;
