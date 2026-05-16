@@ -671,10 +671,13 @@ a { text-decoration: none; color: inherit; }
 
 
 .btn-dashboard-primary {
+  /* Adds 20px space to the top and bottom, and 0px to the left and right */
+  margin: 20px 0; 
+  
   display: inline-block;
   padding: 14px 28px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8); /* High-quality blue gradient */
-  color: #ffffff;
+  background: linear-gradient(135deg, #fade2c, #ffdc00); 
+  color: #000000;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
