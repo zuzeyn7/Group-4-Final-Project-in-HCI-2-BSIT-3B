@@ -668,3 +668,41 @@ a { text-decoration: none; color: inherit; }
     gap: 15px;
   }
 }
+
+
+.btn-dashboard-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8); /* High-quality blue gradient */
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.btn-dashboard-primary .arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-left: 4px;
+}
+
+/* Hover Effects */
+.btn-dashboard-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-dashboard-primary:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Click Effect */
+.btn-dashboard-primary:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.2);
+}
