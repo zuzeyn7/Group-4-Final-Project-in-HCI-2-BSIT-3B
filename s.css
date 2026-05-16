@@ -672,7 +672,7 @@ a { text-decoration: none; color: inherit; }
 
 .btn-dashboard-primary {
   /* Adds 20px space to the top and bottom, and 0px to the left and right */
-  margin: 20px 0; 
+  margin: 20px 20px; 
   
   display: inline-block;
   padding: 14px 28px;
@@ -695,7 +695,7 @@ a { text-decoration: none; color: inherit; }
 
 /* Hover Effects */
 .btn-dashboard-primary:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  background: linear-gradient(135deg, #ffdc2b, #ffdc00);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
   transform: translateY(-1px);
 }
