@@ -672,7 +672,10 @@ a { text-decoration: none; color: inherit; }
 
 .btn-dashboard-primary {
   /* Adds 20px space to the top and bottom, and 0px to the left and right */
-  margin: 20px 20px 20px; 
+  
+margin-top: 25px;
+margin-bottom: 25px;
+   object-fit: cover; 
   
   display: inline-block;
   padding: 14px 28px;
