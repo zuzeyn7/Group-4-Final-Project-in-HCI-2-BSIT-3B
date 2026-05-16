@@ -600,7 +600,7 @@
     <div class="sus-meter">
       <div class="sus-header">
         <div class="sus-title"><i class="ti ti-gauge" style="font-size:14px; vertical-align:-2px; margin-right:5px;"></i>Overall SUS Score</div>
-        <div class="sus-number">67.4 <span style="font-size:16px; color:var(--text-muted);">/ 100</span></div>
+        <div class="sus-number">69 <span style="font-size:16px; color:var(--text-muted);">/ 100</span></div>
       </div>
       <div class="sus-track">
         <div class="sus-fill" id="sus-fill"></div>
@@ -614,7 +614,7 @@
       </div>
       <div class="grade-badge">
         <i class="ti ti-info-circle" style="font-size:12px;"></i>
-        Marginal–Good · Just below the 68-point "Good" industry threshold
+        Marginal–Good · The 69-point "Good/Acceptable" industry threshold
       </div>
     </div>
 
@@ -660,11 +660,11 @@
         <div class="card-title">Gender breakdown</div>
         <div class="donut-section">
           <div style="position:relative; height:140px; width:140px; flex-shrink:0;">
-            <canvas id="genderChart" role="img" aria-label="Donut chart: 81% female, 19% male.">Female 17, Male 4.</canvas>
+            <canvas id="genderChart" role="img" aria-label="Donut chart: 81% female, 19% male.">Female 17, Male 5.</canvas>
           </div>
           <div class="donut-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Female — 17 (81%)</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--blue);"></div> Male — 4 (19%)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Female — 17 (77.27%)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--blue);"></div> Male — 5 (22.73%)</div>
           </div>
         </div>
       </div>
@@ -672,11 +672,11 @@
         <div class="card-title">Prior system experience</div>
         <div class="donut-section">
           <div style="position:relative; height:140px; width:140px; flex-shrink:0;">
-            <canvas id="expChart" role="img" aria-label="Donut chart: 76% have prior experience, 24% do not.">Yes 16, No 5.</canvas>
+            <canvas id="expChart" role="img" aria-label="Donut chart: 72.73% have prior experience, 27.27% do not.">Yes 16, No 6.</canvas>
           </div>
           <div class="donut-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Yes — 16 (76%)</div>
-            <div class="legend-item"><div class="legend-dot" style="background:#555c6e;"></div> No — 5 (24%)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--teal);"></div> Yes — 16 (72.73%)</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#555c6e;"></div> No — 6 (27.27%)</div>
           </div>
         </div>
       </div>
@@ -685,7 +685,7 @@
       <div class="card">
         <div class="card-title">Technology use frequency</div>
         <div style="position:relative; height:160px;">
-          <canvas id="freqChart" role="img" aria-label="Bar chart: Daily 13, Weekly 4, Never 4.">Daily 13, Weekly 4, Never 4.</canvas>
+          <canvas id="freqChart" role="img" aria-label="Bar chart: Daily 13, Weekly 4, Never 4.">Daily 13, Weekly 4, Never 5.</canvas>
         </div>
       </div>
       <div class="card">
@@ -806,7 +806,7 @@ qLabels.forEach((label, i) => {
 // SUS fill animation on load
 setTimeout(() => {
   const el = document.getElementById('sus-fill');
-  if (el) el.style.width = '67.4%';
+  if (el) el.style.width = '69%';
 }, 300);
 
 // Chart defaults
@@ -891,7 +891,7 @@ new Chart(document.getElementById('genderChart'), {
   type: 'doughnut',
   data: {
     labels: ['Female','Male'],
-    datasets: [{ data:[17,4], backgroundColor:['#1D9E75','#378ADD'], borderWidth:0 }]
+    datasets: [{ data:[17,5], backgroundColor:['#1D9E75','#378ADD'], borderWidth:0 }]
   },
   options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, cutout:'65%' }
 });
@@ -944,7 +944,7 @@ new Chart(document.getElementById('ageChart'), {
 new Chart(document.getElementById('genderSusChart'), {
   type: 'bar',
   data: {
-    labels: ['Female (n=17)','Male (n=4)'],
+    labels: ['Female (n=17)','Male (n=5)'],
     datasets: [{ data:[68.5,62.5], backgroundColor:['#1D9E75','#378ADD'], borderRadius:4, borderSkipped:false, barThickness:55 }]
   },
   options: {
