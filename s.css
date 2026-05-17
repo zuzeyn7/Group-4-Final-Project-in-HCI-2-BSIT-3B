@@ -539,53 +539,77 @@ a { text-decoration: none; color: inherit; }
    FOOTER
 ───────────────────────────────────── */
 
-
-
-
+/* 1. Main Footer Wrapper */
 .footer {
-  background: #070f1c;
-  border-top: 1px solid var(--border); /* Fixed: Added missing semicolon */
-  padding: 100%;
+  background-color: #070f1c;
+  color: #aebeec; /* Soft gray-blue text that is easy on the eyes in dark mode */
+  border-top: 1px solid var(--border, #1e293b);
+  padding: 60px 24px 30px 24px; /* Generous top padding, smaller bottom padding */
 }
 
+/* 2. Responsive Grid for Content Columns */
 .footer-inner {
-  max-width: 1250px;                   /* Fixed: Changed from 100% so margin: 0 auto actually centers it */
-  margin: 0 auto;                      /* Fixed: Removed double semicolon */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* Automatically stacks columns on mobile, splits into 2 columns on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   align-items: start;
-  
-  
-  /* Fixed: Made the grid responsive so columns stack on mobile devices */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
-.f-logo {
-  font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
-  font-weight: 700; display: block; margin-bottom: 8px;
-}
-.f-logo sup { font-size: .65em; }
-.f-brand p { font-size: .82rem; color: var(--text-2); }
-.f-school p { font-size: .82rem; color: var(--text-2); line-height: 1.9; }
-.f-nav {
-  display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
-}
-.f-nav a { font-size: .82rem; color: var(--text-2); transition: color .2s; }
-.f-nav a:hover { color: var(--gold); }
-.f-bottom {
-  text-align: center; padding: 20px 24px;
-  border-top: 1px solid rgba(255,255,255,.05);
-}
-.f-bottom p { font-size: .78rem; color: rgba(159,175,194,.4); }
 
-/* ─────────────────────────────────────
-   REVEAL ANIMATIONS
-───────────────────────────────────── */
-.reveal {
-  opacity: 0; transform: translateY(28px);
-  transition: opacity .7s ease, transform .7s ease;
-  transition-delay: var(--d, 0s);
+/* 3. Column 1: Brand Typography */
+.f-brand .f-logo {
+  display: block;
+  color: #fafa2c;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.f-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #fafa2c; /* Slightly dimmer text for secondary info */
+}
+
+/* 4. Column 2: School / Department Details */
+.f-school p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+/* Gives the main university name a tiny bit more visual weight */
+.f-school p:first-child {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.f-school p:last-child {
+  margin-bottom: 0;
+}
+
+/* 5. Copyright Bottom Bar */
+.f-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto; /* Pushes it away from the grid content above */
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08); /* Subtle separator line */
+  text-align: center;
+}
+
+.f-bottom p {
+  font-size: 13px;
+  color: #64748b; /* Muted copyright color */
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
 
 /* ─────────────────────────────────────
    RESPONSIVE
