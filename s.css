@@ -545,8 +545,9 @@ a { text-decoration: none; color: inherit; }
 }
 .footer-inner {
   max-width: 1140px; margin: 0 auto; padding: 56px 24px 40px;
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
   align-items: center;
+  
 }
 .f-logo {
   font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
