@@ -543,7 +543,7 @@ a { text-decoration: none; color: inherit; }
   border-top: 1px solid var(--border);
 }
 .footer-inner {
-  max-width: 1140px; margin: 0 auto; padding: 56px 24px 40px;
+  max-width: 100&; margin: 0 auto; padding: 56px 24px ;
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;
   align-items: start;
 }
