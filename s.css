@@ -540,10 +540,10 @@ a { text-decoration: none; color: inherit; }
 ───────────────────────────────────── */
 .footer {
   background: #070f1c;
-  border-top: 1px solid var(--border) padding; 50px 40px;
+  border-top: 1px solid var(--border) margin: 50px 40px;
 }
 .footer-inner {
-  max-width: 100%; margin: 0 auto; 
+  max-width: 1140px; margin: 0 auto; 
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;
   align-items: start;
 }
