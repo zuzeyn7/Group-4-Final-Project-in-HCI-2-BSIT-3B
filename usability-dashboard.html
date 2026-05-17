@@ -14,7 +14,7 @@
     --card-border:rgba(255,255,255,0.07);
     --teal:#1D9E75; --teal-light:#5DCAA5; --teal-dim:rgba(29,158,117,0.15);
     --coral:#D85A30; --blue:#378ADD; --amber:#EF9F27;
-    --text: white; --text-muted:#8a90a0; --text-dim:#555c6e;
+    --text: white; --text-muted:#7e9691; --text-dim:#555c6e;
     --radius:12px; --radius-sm:8px;
   }
   html { scroll-behavior: smooth; }
@@ -58,10 +58,10 @@
   .metric-value { font-family:'DM Serif Display',serif; font-size:30px; color:#fff; line-height:1; }
   .metric-sub   { font-size:11px; color:var(--text-dim); margin-top:4px; }
 
-  .tabs { display:flex; gap:2px; border-bottom:0.5px solid var(--card-border); margin-bottom:2rem; }
+  .tabs { display:flex; gap:2px; border-bottom:0.5px solid var(--card-border); margin-bottom:2rem; align-items:center; }
   .tab-btn { padding:9px 18px; font-size:13px; font-weight:500; color:var(--text-muted); background:none; border:none; border-bottom:2px solid transparent; cursor:pointer; transition:all .15s; margin-bottom:-0.5px; font-family:'DM Sans',sans-serif; }
   .tab-btn:hover { color:var(--text); }
-  .tab-btn.active { color:var(--teal-light); border-bottom-color:var(--teal); }
+  .tab-btn.active { color:#fade2c; border-bottom-color:#fafa2c; }
   .tab-panel { display:none; }
   .tab-panel.active { display:block; }
 
@@ -76,7 +76,7 @@
 
   .two-col { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.25rem; }
   .single-col {
-  width: 100%;
+  width: 150px;
    align-items:center;
   display: block; /* Ensures it behaves as a standard block layout */
   margin-bottom: 20px; /* Optional: adds space below the card */
@@ -88,7 +88,7 @@
   /* Keep your existing .card styles (padding, background, border, etc.) here */
 }
   @media(max-width:580px){ .two-col{grid-template-columns:1fr; align-items:center; }
-   .section { max-width:100vh; margin:0 auto; padding:0 1.5rem 4rem; align-items:center; } }
+   .section { max-width:100%; margin:0 auto; padding:0 1.5rem 4rem; align-items:center; } }
 
   .q-row { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:0.5px solid rgba(255,255,255,.05); }
   .q-row:last-child { border-bottom:none; }
@@ -99,12 +99,12 @@
   .q-val { font-size:12px; font-weight:600; color:#fff; width:30px; text-align:right; flex-shrink:0; }
   .q-pct { font-size:11px; color:var(--text-dim); width:46px; text-align:right; flex-shrink:0; }
 
-  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:var(--text-muted); margin-bottom:12px; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:#7e9691; margin-bottom:12px; }
   .legend-item { display:flex; align-items:center; gap:5px; }
   .legend-dot  { width:8px; height:8px; border-radius:50%; }
 
   .donut-section { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
-  .donut-legend  { display:flex; flex-direction:column; gap:8px; font-size:12px; color:var(--text-muted); }
+  .donut-legend  { display:flex; flex-direction:column; gap:8px; font-size:12px; color:#7e9691; }
 
   .filter-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:1rem; }
   .chip { padding:5px 13px; border-radius:20px; font-size:12px; font-weight:500; border:0.5px solid var(--card-border); background:var(--card); color:var(--text-muted); cursor:pointer; transition:all .15s; font-family:'DM Sans',sans-serif; }
