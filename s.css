@@ -555,16 +555,39 @@ a { text-decoration: none; color: inherit; }
 .w-img.ph { aspect-ratio: 16/7; border-radius: var(--rad); }
 .w-img.tall { aspect-ratio: 16/7; }
 
-.video-wrap { }
-.video-ph {
-  background: var(--card-bg);
-  border: 1px dashed var(--border);
-  border-radius: var(--rad-lg); padding: 60px;
-  text-align: center;
+
+
+/* Container holding the video heading and player */
+.video-wrap {
+  width: 100%;
+  max-width: 800px; /* Prevents the video from becoming too massive on large desktop screens */
+  margin: 0 auto;    /* Centers the entire video section horizontally */
+  padding: 0 16px;   /* Prevents the video from touching the screen edges on mobile */
+  box-sizing: border-box;
 }
-.vid-icon { font-size: 3rem; margin-bottom: 16px; opacity: .5; }
-.video-ph p { color: var(--text-2); margin-bottom: 16px; }
-.video-ph code { font-size: .78rem; color: var(--gold); opacity: .6; }
+
+/* The actual video placeholder wrapper */
+.video-ph {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Automatically forces a perfect widescreen format on any screen size */
+  background-color: #000000; /* Dark background placeholder while Google Drive loads */
+  border-radius: 12px; /* Smooth rounded corners to match modern UI aesthetics */
+  overflow: hidden; /* Ensures the iframe content respects the border radius */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds professional depth to the card */
+}
+
+/* Forces the iframe to perfectly stretch and fill the wrapper container */
+.video-ph iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
 
 /* ─────────────────────────────────────
    REFLECTIONS
