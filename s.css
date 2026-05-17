@@ -1,38 +1,33 @@
 
 :root {
-
-  --navy:    #0d1b2e;
-
-  --navy-2:  #142138;
-
-  --navy-3:  #1c2d4a;
-
-  --gold:    #fade2c;
-
-  --gold-lt: #fafa2c;
-
-  --cream:   #f5f0e8;
-
-  --white:   #ffffff;
-
-  --text:    #e2ddd4;
-
-  --text-2:  #9fafc2;
-
-  --border:  rgba(201,168,76,.18);
-
-  --card-bg: rgba(28,45,74,.6);
-
-  --alt-bg:  #0a1525;
-
+  /* Clean, light backgrounds instead of deep navy */
+  --navy:    #fcfbfa; /* Warm off-white background */
+  --navy-2:  #f3eee4; /* Soft cream for elevated elements */
+  --navy-3:  #e7dfd1; /* Accent background blocks */
+  
+  /* Retaining gold elements, but slightly deepening for contrast */
+  --gold:    #b59124; /* Richer gold text/accents for high contrast on light bg */
+  --gold-lt: #8c6e14; /* Deep gold secondary variant */
+  
+  /* Contrast adjustments */
+  --cream:   #1a2a42; /* Inverted: dark navy for strong sub-headings */
+  --white:   #111a24; /* Inverted: deep charcoal black for heavy titles */
+  
+  /* Typography - optimized for reading against light backdrops */
+  --text:    #242d38; /* Crisp, readable charcoal gray for body text */
+  --text-2:  #5c6b7d; /* Muted slate gray for subtitles and captions */
+  
+  /* Visual adjustments */
+  --border:  rgba(181, 145, 36, 0.15); /* Soft gold-tinted borders */
+  --card-bg: #ffffff;                  /* Crisp white cards */
+  --alt-bg:  #f4f1ea;                  /* Secondary section background variation */
+  
+  /* Typography & Core Elements remain consistent */
   --font-d:  'Playfair Display', serif;
-
   --font-s:  'DM Sans', sans-serif;
-
   --rad:     12px;
-
   --rad-lg:  20px;
-  --shadow:  0 8px 40px rgba(0,0,0,.4);
+  --shadow:  0 8px 32px rgba(140, 110, 20, 0.06); /* Lighter, subtle shadow */
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
