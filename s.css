@@ -550,7 +550,7 @@ a { text-decoration: none; color: inherit; }
 }
 .f-logo {
   font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
-  font-weight: 700; display: block; margin-bottom: 8px;
+  font-weight: 700; display: block; margin-bottom: 8px; margin-left: 10px;
 }
 .f-logo sup { font-size: .65em; }
 .f-brand p { font-size: .82rem; color: var(--text-2); }
