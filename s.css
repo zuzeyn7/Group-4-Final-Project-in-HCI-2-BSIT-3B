@@ -545,6 +545,7 @@ a { text-decoration: none; color: inherit; }
   color: #aebeec; /* Soft gray-blue text that is easy on the eyes in dark mode */
   border-top: 1px solid var(--border, #1e293b);
   padding: 60px 24px 30px 24px; /* Generous top padding, smaller bottom padding */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* 2. Responsive Grid for Content Columns */
@@ -561,7 +562,7 @@ a { text-decoration: none; color: inherit; }
 /* 3. Column 1: Brand Typography */
 .f-brand .f-logo {
   display: block;
-  color: #fafa2c;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -572,7 +573,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
-  color: #fafa2c; /* Slightly dimmer text for secondary info */
+  color: #94a3b8; /* Slightly dimmer text for secondary info */
 }
 
 /* 4. Column 2: School / Department Details */
@@ -607,9 +608,6 @@ a { text-decoration: none; color: inherit; }
   margin: 0;
   line-height: 1.5;
 }
-
-
-
 
 /* ─────────────────────────────────────
    RESPONSIVE
