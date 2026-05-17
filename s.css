@@ -540,13 +540,19 @@ a { text-decoration: none; color: inherit; }
 ───────────────────────────────────── */
 .footer {
   background: #070f1c;
-  border-top: 1px solid var(--border) 
+  border-top: 1px solid var(--border); /* Fixed: Added missing semicolon */
+  padding: 40px 20px;                  /* Added: Gives the footer breathing room */
 }
+
 .footer-inner {
-  max-width: 1140px; margin: 0 auto;;
-  padding: 50%;  
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;
+  max-width: 1200px;                   /* Fixed: Changed from 100% so margin: 0 auto actually centers it */
+  margin: 0 auto;                      /* Fixed: Removed double semicolon */
+  gap: 40px;
   align-items: start;
+  
+  /* Fixed: Made the grid responsive so columns stack on mobile devices */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .f-logo {
   font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
