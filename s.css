@@ -616,6 +616,10 @@ a { text-decoration: none; color: inherit; }
   .gallery-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.2rem; }
   .inst-item { flex-direction: column; }
+  .members-grid {
+  display: flex; flex-wrap: wrap;
+  gap: 28px; justify-content: center;
+}
 }
 .project-logo-svg {
         --logo-size: 80px; /* Slightly smaller for mobile screens */
