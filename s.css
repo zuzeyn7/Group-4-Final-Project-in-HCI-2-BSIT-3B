@@ -664,8 +664,6 @@ a { text-decoration: none; color: inherit; }
     grid-template-columns: 1fr; /* Stack images in a single column */
     gap: 15px;
   }
-
-  .member-card { width: 100px; padding: 24px 16px; }
 }
 
 
