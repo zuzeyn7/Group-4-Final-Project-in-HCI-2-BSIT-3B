@@ -271,7 +271,7 @@ a { text-decoration: none; color: inherit; }
 /* ─────────────────────────────────────
    DATA GATHERING
 ───────────────────────────────────── */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 56px; }
+.two-col { display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 56px; }
 .info-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -513,15 +513,18 @@ a { text-decoration: none; color: inherit; }
 }
 
 
-/* Container that handles the centering */
 .button-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically if the container has height */
-  width: 100%;             /* Ensures it takes up the full width of the screen */
-  padding: 24px 0;         /* Gives the button breathing room top and bottom */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+  /* Shorthand: 24px top, 0 left/right, 48px bottom */
+  padding: 24px 0 48px 0; 
+  
   box-sizing: border-box;
 }
+
 
 /* Ensure the button behaves nicely as a flex item */
 .figma-btn {
