@@ -455,7 +455,7 @@ a { text-decoration: none; color: inherit; }
   
   /* High-Contrast Color Palette */
   color: #111111; /* Deep black for maximum readability on yellow */
-  background: #FFDE4D; /* Vibrant, eye-catching yellow */
+  background: #fade2c; /* Vibrant, eye-catching yellow */
   
   /* Tactile 3D Shadow Effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
