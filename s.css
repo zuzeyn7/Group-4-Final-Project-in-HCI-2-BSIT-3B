@@ -546,7 +546,7 @@ a { text-decoration: none; color: inherit; }
 .footer-inner {
   max-width: 1140px; margin: 0 auto; padding: 56px 24px 40px;
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;
-  align-items: start;
+  align-items: center;
 }
 .f-logo {
   font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
@@ -561,7 +561,7 @@ a { text-decoration: none; color: inherit; }
 .f-nav a { font-size: .82rem; color: var(--text-2); transition: color .2s; }
 .f-nav a:hover { color: var(--gold); }
 .f-bottom {
-  text-align: center; padding: 24px 24px;
+  text-align: center; padding: 20px 24px;
   border-top: 1px solid rgba(255,255,255,.05);
 }
 .f-bottom p { font-size: .78rem; color: rgba(159,175,194,.4); }
