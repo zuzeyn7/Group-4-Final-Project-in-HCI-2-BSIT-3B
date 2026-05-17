@@ -545,7 +545,7 @@ a { text-decoration: none; color: inherit; }
 .footer {
   background: #070f1c;
   border-top: 1px solid var(--border); /* Fixed: Added missing semicolon */
-  padding: 40px 20px;                  /* Added: Gives the footer breathing room */
+  padding: 60px 24px 30px 24px;
 }
 
 .footer-inner {
@@ -554,9 +554,10 @@ a { text-decoration: none; color: inherit; }
   gap: 40px;
   align-items: start;
   
+  
   /* Fixed: Made the grid responsive so columns stack on mobile devices */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 .f-logo {
   font-family: var(--font-d); font-size: 1.2rem; color: var(--gold);
