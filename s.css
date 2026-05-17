@@ -6,7 +6,7 @@
   --navy-3:  #e7dfd1; /* Accent background blocks */
   
   /* Retaining gold elements, but slightly deepening for contrast */
-  --gold:    #fade2c; /* Richer gold text/accents for high contrast on light bg */
+  --gold:    #fafa2c; /* Richer gold text/accents for high contrast on light bg */
   --gold-lt: #8c6e14; /* Deep gold secondary variant */
   
   /* Contrast adjustments */
@@ -455,7 +455,7 @@ a { text-decoration: none; color: inherit; }
   
   /* High-Contrast Color Palette */
   color: #111111; /* Deep black for maximum readability on yellow */
-  background: #fade2c; /* Vibrant, eye-catching yellow */
+  background: #fafa2c; /* Vibrant, eye-catching yellow */
   
   /* Tactile 3D Shadow Effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
