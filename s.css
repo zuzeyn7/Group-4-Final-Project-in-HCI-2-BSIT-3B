@@ -455,14 +455,14 @@ a { text-decoration: none; color: inherit; }
   
   /* High-Contrast Color Palette */
   color: #111111; /* Deep black for maximum readability on yellow */
-  background: #fafa2c; /* Vibrant, eye-catching yellow */
+  background: #00e5ff; /* Vibrant, eye-catching yellow */
   
   /* Tactile 3D Shadow Effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
-              0 10px 20px rgba(255, 222, 77, 0.3); /* Glowing yellow ambient shadow */
-  
-  /* Smooth transitions */
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
+            0 10px 20px rgba(0, 229, 255, 0.3); /* Glowing matching cyan ambient shadow */
+
+/* Smooth transitions */
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 
