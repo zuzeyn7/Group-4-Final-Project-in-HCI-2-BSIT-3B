@@ -87,7 +87,8 @@
   box-sizing: border-box;
   /* Keep your existing .card styles (padding, background, border, etc.) here */
 }
-  @media(max-width:580px){ .two-col{grid-template-columns:1fr;} }
+  @media(max-width:580px){ .two-col{grid-template-columns:1fr; align-items:center; }
+   .section { max-width:100%; margin:0 auto; padding:0 1.5rem 4rem; align-items:center; } }
 
   .q-row { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:0.5px solid rgba(255,255,255,.05); }
   .q-row:last-child { border-bottom:none; }
