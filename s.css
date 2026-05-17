@@ -545,7 +545,7 @@ a { text-decoration: none; color: inherit; }
 .footer {
   background: #070f1c;
   border-top: 1px solid var(--border); /* Fixed: Added missing semicolon */
-  padding: 60px 24px 60px 24px;
+  padding: 100%;
 }
 
 .footer-inner {
