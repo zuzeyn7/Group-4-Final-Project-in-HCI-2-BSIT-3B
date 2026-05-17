@@ -734,8 +734,8 @@ margin-bottom: 25px;
   border-radius: 100px; /* Perfect pill shape */
   
   /* Colors & Effects */
-  color: #ffffff;
-  background: linear-gradient(135deg, #2c2c2c 0%, #111111 100%);
+  color: black;
+  background: linear-gradient(135deg, #fafa2c 0%, #fade2c 100%);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   
   /* Smooth transitions for all devices */
@@ -778,4 +778,24 @@ margin-bottom: 25px;
     padding: 0 16px;
     font-size: 15px;
   }
+
+/* Container that handles the centering */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically if the container has height */
+  width: 100%;             /* Ensures it takes up the full width of the screen */
+  padding: 24px 0;         /* Gives the button breathing room top and bottom */
+  box-sizing: border-box;
+}
+
+/* Ensure the button behaves nicely as a flex item */
+.figma-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  /* (Keep the rest of your existing button styles here) */
+}
+  
 }
