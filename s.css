@@ -561,7 +561,7 @@ a { text-decoration: none; color: inherit; }
 .f-nav a { font-size: .82rem; color: var(--text-2); transition: color .2s; }
 .f-nav a:hover { color: var(--gold); }
 .f-bottom {
-  text-align: center; 
+  text-align: center; padding: 24px 24px;
   border-top: 1px solid rgba(255,255,255,.05);
 }
 .f-bottom p { font-size: .78rem; color: rgba(159,175,194,.4); }
